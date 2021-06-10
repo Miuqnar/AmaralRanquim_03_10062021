@@ -1,0 +1,147 @@
+.header-resto{
+    align-items: center;
+    position: relative;
+    i:first-child{
+        position: absolute;
+        left: 80px;
+        top: 2rem;
+        color: #000;
+        font-size: 20px;
+        cursor: pointer;
+    }   
+}
+
+// section resto_01
+
+.restaurant-01{
+    font-family: $font-body;
+    .image img{
+        max-width: 100%;
+        max-height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__soustitre01{
+        padding: 30px 0 0;
+        font-family: $font-logo__titre;
+        font-size: 25px;
+    }
+}
+.bg{
+    padding: 0 34px;
+    position: relative;
+    border-radius: 50px 50px 0 0;
+    background: $bg;
+    margin-top: -4rem;
+}
+.resto01{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    &-container{
+        min-width: 100%;
+    }
+    &-titre{
+        font-weight: 200;
+        text-transform: uppercase;
+        border-bottom: 3px $colourthird solid;
+        width: 50px;
+        font-size: 15px;
+        padding: 45px 0 0;
+    }
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: $ombre_fonction;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    animation: restorant-01 1000ms;
+    animation-timing-function: cubic-bezier(.17,.31,.56,.72);
+    overflow: hidden;
+    &:first-child{
+        animation-delay: 0;
+    }
+    &:nth-child(1){
+        animation-delay: 200ms;
+    }
+
+    @for $i from 2 to 6 {
+        &.anime-0#{$i}{
+            animation-delay: (200ms*$i);
+        }
+    }
+    &-01{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        h4:first-child{
+            font-size: 15px;
+            padding: 0 0 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h5:last-child{
+            font-size: 14px;
+            font-weight: 200;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &__price{
+            display: flex;
+            span:first-child{
+                position: relative;
+                top: 24px;
+            }
+            .check{
+                background: $colourthird;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                border-radius: 0 15px 15px 0;
+                margin: -15px -85px -15px 15px;
+                transition: all .5s;
+                i:last-child{
+                    color: #fff;
+                    font-size: 25px;
+                    transform: rotate(180deg);
+                    transition: transform 600ms;
+                }
+            }
+        }
+    }
+}
+.menu:hover i:last-child{
+    transform: rotate(0deg);
+}
+.menu:hover .check{
+    margin-right: -15px;
+}
+
+.comander{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 60px;
+    span:first-child{
+        padding: 15px 25px;
+        font-size: 15px;
+        @include button;
+    }
+}
+.coeurResto{
+    left: 30px;
+    top: 25px;
+}
+
+@include only-table;
+@include only-mobile;

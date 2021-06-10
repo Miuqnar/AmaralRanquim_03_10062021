@@ -1,0 +1,45 @@
+.icon_fonctionnemet{
+    background: #f8f7f7;
+    padding: 20px;
+}
+.icon_fonctionnemet03{
+    color: #807e7e;
+}
+.icon_fonctionnemet-store{
+    background: #f2ebfa;
+    padding: 20px;
+}
+.icon_fonctionnemet-store02{
+    color: $colourprimery;
+}
+.icon-coeur{
+    position: relative;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    margin-top: -50px;
+    margin-right: 30px;
+    i:first-child{
+        position: relative;
+        left: 25px;
+    }
+    i:last-child{
+        transform-origin: center center;
+        transform: scale(0);
+        transition: transform 420ms ease-in-out;
+    }
+    &:hover{
+        i:last-child{
+            transform: scale(1);
+            background: -webkit-linear-gradient($colourprimery, $coloursecondary);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.icon-footer{
+    color: #fff;
+}

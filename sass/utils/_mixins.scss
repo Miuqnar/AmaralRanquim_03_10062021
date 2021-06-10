@@ -1,0 +1,74 @@
+
+// button
+
+@mixin button ($colour: $colourprimery $coloursecondary) {
+    background: linear-gradient(to top left, $colourprimery, $coloursecondary);
+    box-shadow: 2px 2px 2px rgb(131, 131, 131);
+    transition: all 200ms ease;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    &:hover{
+        box-shadow: 2px 2px 2px 2px #727070;
+        opacity: 80%;
+    }
+}
+@mixin nouveau ($colour: $colourthird) {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #027457;
+    background: $colourthird;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+// media query
+@mixin only-table {
+    @media screen and (max-width: 890px) {
+        .fonctionnement-container{
+            grid-template-columns: 1fr;
+            &__items{
+                min-width: 70%;
+            }
+        }
+        .resto01{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@mixin only-mobile {
+    @media screen and (max-width: 768px) {
+        .about-search{
+            font-size: 1px;
+        }
+
+        .fonctionnement{
+            padding: 65px 25px;
+        }
+        .restaurents{
+            &-container{
+                &__items{
+                    padding: 14px 2px;
+                }
+            }
+        }
+        .restaurant-01__soustitre01{
+            font-size: 20px;
+        }
+        .bg{
+            padding: 0 15px;
+        }
+        .header-resto{
+            font-size: 15px;
+            i:first-child{
+                left: 20px;
+            }
+        }
+    }
+}
+
+

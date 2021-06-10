@@ -1,0 +1,22 @@
+header{
+    position: fixed;
+    width: 100%;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: $ombre;
+    font-family: $font-logo__titre;
+    z-index: 10;
+}
+.place{
+    padding: 6rem 0 1rem;
+    display: flex;
+    font-family:  $font-body;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebe9e9;
+    &-modify{
+        padding: 0 15px;
+    }
+}

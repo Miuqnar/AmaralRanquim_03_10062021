@@ -1,0 +1,33 @@
+
+@keyframes loading {
+    0% {
+    transform: translateY(0);
+    }
+    25% {
+        transform: translateY(1.5rem);
+    }
+    75% {
+        transform: translateY(-.10rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+@keyframes loading-hidden {
+    100%{
+        z-index: -50;
+    }
+}
+
+@keyframes restorant-01 {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
