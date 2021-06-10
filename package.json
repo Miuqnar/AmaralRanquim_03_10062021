@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Premier projet avec sass",
+  "main": "main.scss",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixer/"
+  },
+  "author": "Ranquim Amaral",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
