@@ -403,7 +403,7 @@ header {
 }
 .header-resto {
   align-items: center;
-  position: relative;
+  position: fixed;
 }
 .header-resto i:first-child {
   position: absolute;
@@ -416,6 +416,7 @@ header {
 
 .restaurant-01 {
   font-family: "Roboto", sans-serif;
+  padding-top: 4.8rem;
 }
 .restaurant-01 .image img {
   max-width: 100%;

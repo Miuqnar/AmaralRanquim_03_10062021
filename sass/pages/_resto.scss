@@ -1,6 +1,6 @@
 .header-resto{
     align-items: center;
-    position: relative;
+    position: fixed;
     i:first-child{
         position: absolute;
         left: 80px;
@@ -15,6 +15,7 @@
 
 .restaurant-01{
     font-family: $font-body;
+    padding-top: 4.8rem;
     .image img{
         max-width: 100%;
         max-height: 30rem;
