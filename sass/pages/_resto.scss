@@ -64,9 +64,6 @@
     animation: restorant-01 1000ms;
     animation-timing-function: cubic-bezier(.17,.31,.56,.72);
     overflow: hidden;
-    &:first-child{
-        animation-delay: 0;
-    }
     &:nth-child(1){
         animation-delay: 200ms;
     }

@@ -32,9 +32,9 @@
         i:last-child{
             transform: scale(1);
             background: -webkit-linear-gradient($colourprimery, $coloursecondary);
+            background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text;
-            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
