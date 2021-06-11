@@ -19,9 +19,6 @@ body {
   max-width: 1304px;
 }
 
-/*body.page-resto{
-    background: 100% / 100% url("../../Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") no-repeat fixed;
-}*/
 @keyframes loading {
   0% {
     transform: translateY(0);
