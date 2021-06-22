@@ -8,6 +8,7 @@ Le développement en:
 - HTML 
 - Sass
 - CSS, 
+
 Sans JavaScript.
 
 # Compatibilité
