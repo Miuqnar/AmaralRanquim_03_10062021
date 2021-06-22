@@ -2,6 +2,13 @@
 
 Troisième projet du parcours développeur web chez OpenClassrooms, l'obejctif est de développer un site 100% mobile et de dynamiser une page web avec des animations CSS.
 
+# Technologies
+
+Le développement en:  
+- HTML 
+- Sass
+- CSS, 
+Sans JavaScript.
 
 # Compatibilité
 
