@@ -8,7 +8,8 @@
     height: 100%;
     max-width: 1304px;
     background: rgba(24, 24, 24, 0.801);
-    animation: loading-hidden 2000ms;
+    animation-delay: 2000ms;
+    animation: loading-hidden 2500ms cubic-bezier(.2,.63,.85,.66);
     animation-fill-mode: both;
     display: flex;
     align-items: center;
@@ -35,19 +36,19 @@
     }
     .m01{
         border-top-color: $colourprimery;
-        animation: loading 1400ms;
+        animation: loading 1000ms;
         animation-iteration-count: 4;
         animation-delay: .90s;
     }
     .m02{
         border-left-color: $coloursecondary;
-        animation: loading 1400ms;
+        animation: loading 1000ms;
         animation-iteration-count: 4;
         animation-delay: .80s;
     }
     .m03{
         border-bottom-color: $colourthird;
-        animation: loading 1400ms;
+        animation: loading 1000ms;
         animation-iteration-count: 4;
         animation-delay: .75s;
     }

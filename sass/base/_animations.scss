@@ -10,7 +10,9 @@
 }
 @keyframes loading-hidden {
     100%{
-        z-index: -500;
+        z-index: -10;
+        animation: cubic-bezier(.2,.63,.85,.66);
+        animation-delay: 1500ms;
     }
 }
 

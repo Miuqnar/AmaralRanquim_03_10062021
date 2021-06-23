@@ -29,7 +29,9 @@ body {
 }
 @keyframes loading-hidden {
   100% {
-    z-index: -500;
+    z-index: -10;
+    animation: cubic-bezier(0.2, 0.63, 0.85, 0.66);
+    animation-delay: 1500ms;
   }
 }
 @keyframes restorant-01 {
@@ -215,7 +217,8 @@ header {
   height: 100%;
   max-width: 1304px;
   background: rgba(24, 24, 24, 0.801);
-  animation: loading-hidden 2000ms;
+  animation-delay: 2000ms;
+  animation: loading-hidden 2500ms cubic-bezier(0.2, 0.63, 0.85, 0.66);
   animation-fill-mode: both;
   display: flex;
   align-items: center;
@@ -244,19 +247,19 @@ header {
 }
 .loading-items .m01 {
   border-top-color: #9356DC;
-  animation: loading 1400ms;
+  animation: loading 1000ms;
   animation-iteration-count: 4;
   animation-delay: 0.9s;
 }
 .loading-items .m02 {
   border-left-color: #FF79DA;
-  animation: loading 1400ms;
+  animation: loading 1000ms;
   animation-iteration-count: 4;
   animation-delay: 0.8s;
 }
 .loading-items .m03 {
   border-bottom-color: #99E2D0;
-  animation: loading 1400ms;
+  animation: loading 1000ms;
   animation-iteration-count: 4;
   animation-delay: 0.75s;
 }
