@@ -1,22 +1,16 @@
 
 @keyframes loading {
-    0% {
-    transform: translateY(0);
+    0%{
+        transform: rotate(0deg);
     }
-    25% {
-        transform: translateY(1.5rem);
-    }
-    75% {
-        transform: translateY(-.10rem);
-    }
-    100% {
-        transform: translateY(0);
+    100%{
+        transform: rotate(360deg);
     }
     
 }
 @keyframes loading-hidden {
     100%{
-        z-index: -50;
+        z-index: -500;
     }
 }
 

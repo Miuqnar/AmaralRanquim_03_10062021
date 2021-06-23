@@ -21,21 +21,15 @@ body {
 
 @keyframes loading {
   0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(1.5rem);
-  }
-  75% {
-    transform: translateY(-0.1rem);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 }
 @keyframes loading-hidden {
   100% {
-    z-index: -50;
+    z-index: -500;
   }
 }
 @keyframes restorant-01 {
@@ -220,9 +214,8 @@ header {
   width: 100%;
   height: 100%;
   max-width: 1304px;
-  background: rgba(0, 0, 0, 0.801);
-  animation-delay: 1000ms;
-  animation: loading-hidden 1000ms cubic-bezier(0, 0.65, 0.52, 0.31);
+  background: rgba(24, 24, 24, 0.801);
+  animation: loading-hidden 2000ms;
   animation-fill-mode: both;
   display: flex;
   align-items: center;
@@ -231,27 +224,41 @@ header {
 }
 
 .loading-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-items__text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 .loading-items__modify {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  border: 8px solid transparent;
   border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  animation: loading 1000ms;
-  animation-iteration-count: 1;
+  border-right-color: transparent;
 }
 .loading-items .m01 {
-  background: #9356DC;
+  border-top-color: #9356DC;
+  animation: loading 1400ms;
+  animation-iteration-count: 4;
+  animation-delay: 0.9s;
 }
 .loading-items .m02 {
-  background: #FF79DA;
-  animation-delay: 200ms;
+  border-left-color: #FF79DA;
+  animation: loading 1400ms;
+  animation-iteration-count: 4;
+  animation-delay: 0.8s;
 }
 .loading-items .m03 {
-  background: #99E2D0;
-  animation-delay: 400ms;
+  border-bottom-color: #99E2D0;
+  animation: loading 1400ms;
+  animation-iteration-count: 4;
+  animation-delay: 0.75s;
 }
 
 .fonctionnement {
