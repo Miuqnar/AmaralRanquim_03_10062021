@@ -58,10 +58,6 @@ body {
   padding: 20px;
 }
 
-.icon_fonctionnemet-store02 {
-  color: #9356DC;
-}
-
 .icon-coeur {
   position: relative;
   font-size: 25px;
@@ -291,6 +287,9 @@ header {
 .fonctionnement-container__items:hover {
   background: #f2ebfa;
   transform: scale(1.01);
+}
+.fonctionnement-container__items:hover i:first-child {
+  color: #9356DC;
 }
 .fonctionnement-container__items--modify {
   display: flex;

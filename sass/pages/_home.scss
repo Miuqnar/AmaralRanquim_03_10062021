@@ -81,6 +81,9 @@
             &:hover{
                 background: #f2ebfa;
                 transform: scale(1.01);
+                i:first-child{
+                    color: $colourprimery;
+                }
             }
             &--modify{
                 display: flex;
